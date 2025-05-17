@@ -4,4 +4,4 @@
   * [Markdown 入门到入土](tag_markdown用法/markdown入门到入土.md)
 
 * 杂项
-  * [本地构建docsify笔记](本地构建docsify.md)
+  * [本地构建docsify笔记](杂项/本地构建docsify.md)

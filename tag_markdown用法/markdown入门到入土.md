@@ -1,11 +1,21 @@
+<!-- 
+created_at: 2025-05-17
+updated_at: 2025-05-17
+author: SeaflyNN
+github: https://github.com/seaflyNN/doc-collect
+-->
+
 # markdown语法速查
-<p>平常常使用markdown来写文档, 但是语法可能又会经常忘记, 故按照使用场景、以工具的形式记录下来. markdown和html的语法很相似.</p>
+平常常使用markdown来写文档, 但是语法可能又会经常忘记, 故按照使用场景、以工具的形式记录下来, 当作一个速查笔记.
 
 ## 1. 标题
-标题是用#号来表示的, 比如: ```# 一级标题 ## 二级标题 ## 三级标题```
-```
-# 一级标题
-```
+标题是用#号来表示的, 比如: `# 一级标题 ## 二级标题 ## 三级标题`
+
+| 原始代码 | 渲染后 |
+| ------- | ------- |
+| `# 一级标题` | <h1>一级标题</h1> |
+| `## 二级标题` | <h2>二级标题</h2> |
+| `### 三级标题` | <h3>三级标题</h3> |
 
 ## 2. 段落
 段落之间空一行即可创建新段落
@@ -126,8 +136,8 @@ function hello() {
 
 | 原始代码 | 说明 | 渲染后 |
 | ------- | ------- | ------- |
-| `[显示的名字](https://www.baidu.com)` | 链接语法 | [显示的名字](https://www.baidu.com) |
-| `[显示的名字](https://www.baidu.com "添加title")` | 链接语法, 增加title | [显示的名字](https://www.baidu.com "百度") |
+| `[自定链接名字-这里以百度为例子](https://seaflynn.github.io/doc-collect)` | 链接语法 | [自定链接名字-这里以百度为例子](https://seaflynn.github.io/doc-collect) |
+| `[自定链接名字-这里以百度为例子](https://seaflynn.github.io/doc-collect "添加title")` | 链接语法, 增加title | [自定链接名字-这里以百度为例子](https://seaflynn.github.io/doc-collect "自定义添加的title") |
 
 ## 9. 图片语法
 
@@ -135,13 +145,13 @@ function hello() {
 
 | 原始代码 | 说明 | 渲染后 |
 | ------- | ------- | ------- |
-| `![这是图片](/assets/img/img.png)` | 图片引用的例子, 可以渲染成pdf或者其他的 | ![这是图片](/assets/img/img.png) |
+| `![兔子警官](imgs/2025-05-17_17-25-44.png)` | 图片引用的例子, 可以渲染成pdf或者其他的 | ![兔子警官](imgs/2025-05-17_17-25-44.png) |
 
 ### 9.2 如何给图片增加超链接
 
 | 原始代码 | 说明 | 渲染后 |
 | ------- | ------- | ------- |
-| `[![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://www.baidu.com)` | 给图片增加超链接 | [![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://www.baidu.com) |
+| `[![兔子警官](imgs/2025-05-17_17-25-44.png "兔子警官")](https://seaflynn.github.io/doc-collect)` | 给图片增加超链接 | [![兔子警官](imgs/2025-05-17_17-25-44.png "兔子警官")](https://seaflynn.github.io/doc-collect) |
 
 
 ## 10. markdown 的代码转义
@@ -198,4 +208,6 @@ function hello() {
    ```
    \<br\>
    ```
-   但这种方法不通用，推荐使用HTML实体。
+   但这种方法不通用，推荐使用HTML实体
+
+***

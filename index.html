@@ -7,24 +7,186 @@
   <meta name="description" content="Markdown 语法参考指南">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .metadata-footer {
+      margin-top: 50px; 
+      padding: 15px; 
+      background-color: #f8f8f8; 
+      border-radius: 5px; 
+      font-size: 14px;
+      border-left: 4px solid #42b983;
+    }
+    
+    /* 侧边栏美化 */
+    .sidebar {
+      padding: 0 15px;
+    }
+    
+    .sidebar ul li {
+      margin: 0;
+      position: relative;
+    }
+    
+    .sidebar ul li p {
+      margin: 10px 0;
+    }
+    
+    .sidebar ul li a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #505d6b;
+      font-size: 14px;
+      transition: all 0.3s;
+      border-bottom: none !important;
+    }
+    
+    .sidebar ul li a:hover {
+      color: #42b983;
+      text-decoration: none;
+    }
+    
+    .sidebar ul li.active > a {
+      color: #42b983;
+      font-weight: 600;
+    }
+    
+    /* 折叠箭头美化 */
+    .sidebar-nav li.open > a:not(.active) {
+      background-color: rgba(66, 185, 131, 0.05);
+    }
+    
+    /* 分组标题 */
+    .sidebar-nav > ul > li > p {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: #7f8c8d;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
+    // 配置Docsify
     window.$docsify = {
-      name: 'Markdown 指南',
-      repo: '',
+      name: '文档集合',
+      repo: 'seaflyNN/doc-collect',
       loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true,
+      formatUpdated: '{YYYY}/{MM}/{DD}',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      count:{
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        localization: {
+          words: '',
+          minute: ''
+        },
+        isExpected: true
+      },
+      topMargin: 90,
+      sidebarDisplayLevel: 1,
+      plugins: [
+        function(hook, vm) {
+          // 解析Markdown文件开头的元数据
+          function parseMarkdownMetadata(content) {
+            var metadata = {};
+            
+            // 检查文件是否以HTML注释开头 - 使用字符串索引替代正则表达式
+            var commentStartIndex = content.indexOf("<!--");
+            var commentEndIndex = content.indexOf("-->");
+            
+            if (commentStartIndex === 0 && commentEndIndex > 0) {
+              var commentContent = content.substring(commentStartIndex + 4, commentEndIndex);
+              
+              // 逐行解析
+              var lines = commentContent.split("\n");
+              for (var i = 0; i < lines.length; i++) {
+                var line = lines[i].trim();
+                
+                if (line.indexOf("created_at:") === 0) {
+                  metadata.createdAt = line.substring("created_at:".length).trim();
+                }
+                else if (line.indexOf("updated_at:") === 0) {
+                  metadata.updatedAt = line.substring("updated_at:".length).trim();
+                }
+                else if (line.indexOf("author:") === 0) {
+                  metadata.author = line.substring("author:".length).trim();
+                }
+                else if (line.indexOf("github:") === 0) {
+                  metadata.github = line.substring("github:".length).trim();
+                }
+              }
+            }
+            
+            return metadata;
+          }
+          
+          // 在准备渲染之前提取元数据
+          hook.beforeEach(function(content) {
+            var metadata = parseMarkdownMetadata(content);
+            vm.route.metadata = metadata;
+            return content;
+          });
+          
+          // 在每个页面加载完成后运行
+          hook.doneEach(function() {
+            var metadata = vm.route.metadata;
+            
+            if (metadata && Object.keys(metadata).length > 0) {
+              var content = document.querySelector('.content');
+              if (content) {
+                // 创建元数据区域
+                var footer = document.createElement('div');
+                footer.className = 'metadata-footer';
+                
+                // 构建元数据HTML
+                var html = '<p>';
+                if (metadata.createdAt) {
+                  html += '创建于: ' + metadata.createdAt;
+                }
+                if (metadata.updatedAt) {
+                  html += ' | 最后更新: ' + metadata.updatedAt;
+                }
+                if (metadata.author) {
+                  html += ' | 作者: ' + metadata.author;
+                }
+                if (metadata.github) {
+                  html += ' | <a href="' + metadata.github + '" target="_blank">GitHub</a>';
+                }
+                html += '</p>';
+                
+                footer.innerHTML = html;
+                
+                // 添加到内容末尾
+                content.appendChild(document.createElement('hr'));
+                content.appendChild(footer);
+              }
+            }
+          });
+        }
+      ],
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: '搜索...',
+        placeholder: '搜索文档...',
         noData: '找不到结果',
-        depth: 6
+        depth: 6,
+        hideOtherSidebarContent: true,
+        namespace: 'website-1',
+        pathNamespaces: ['/zh-cn', '/en-us', '/ja-jp']
       }
-    }
+    };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -32,5 +194,12 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  
+  <!-- 添加计数插件 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 添加侧边栏折叠插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 添加侧边栏折叠样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </body>
 </html> 

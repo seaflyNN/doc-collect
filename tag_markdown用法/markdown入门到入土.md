@@ -8,6 +8,11 @@ github: https://github.com/seaflyNN/doc-collect
 # markdown语法速查
 平常常使用markdown来写文档, 但是语法可能又会经常忘记, 故按照使用场景、以工具的形式记录下来, 当作一个速查笔记.
 
+## vscode相关插件
++ Markdown Preview Enhanced
++ Markdown Preview Mermaid Support
++ Markdown All in One
+
 ## 1. 标题
 标题是用#号来表示的, 比如: `# 一级标题 ## 二级标题 ## 三级标题`
 

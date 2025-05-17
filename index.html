@@ -64,6 +64,12 @@
       font-weight: 700;
       font-size: 16px;
     }
+    
+    /* 控制锚点导航最大高度，超出部分滚动 */
+    .sidebar-nav .app-sub-sidebar {
+      max-height: 200px;
+      overflow-y: auto;
+    }
   </style>
 </head>
 <body>
@@ -74,7 +80,7 @@
       name: '文档集合',
       repo: 'seaflyNN/doc-collect',
       loadSidebar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 2,
       auto2top: true,
       formatUpdated: '{YYYY}/{MM}/{DD}',
       alias: {

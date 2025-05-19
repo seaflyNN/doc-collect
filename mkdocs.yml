@@ -1,0 +1,34 @@
+site_name: 我的文档
+site_description: 使用 MkDocs 构建的文档站点
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - search.suggest
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 文档写作:
+    - Markdown 入门到入土: tag_markdown用法/markdown入门到入土.md
+  - 前端:
+    - 错误记录:
+      - TailwindCSS错误记录: 前端/错误记录/err-tailwindcss.md
+  - 关于AI:
+    - b站:
+      - 周鸿祎-AI创业-百大AI应用系列视频博客: 关于AI/b站/周鸿祎-ai创业-百大AI应用系列视频博客.md
+  - 杂项:
+    - 本地构建docsify: 杂项/本地构建docsify.md
+    - 本地构建mkdocs: 杂项/本地构建mkdocs.md

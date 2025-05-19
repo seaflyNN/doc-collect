@@ -1,5 +1,7 @@
 site_name: 我的文档
 site_description: 使用 MkDocs 构建的文档站点
+site_url: https://seaflynn.github.io/doc-collect/
+
 theme:
   name: material
   features:

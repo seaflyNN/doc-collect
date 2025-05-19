@@ -9,7 +9,7 @@
 
 ## 🌐 文档主页
 
-[🔗 https://seaflynn.github.io/doc-collect/#/](https://seaflynn.github.io/doc-collect/#/)
+[🔗 https://seaflynn.github.io/doc-collect/#/](https://seaflynn.github.io/doc-collect/)
 
 ## 📋 文档列表
 
@@ -19,7 +19,7 @@
 
 ## ℹ️ 关于
 
-此文档站使用 [Docsify](https://docsify.js.org/) 构建，旨在提供一个集中式知识库。
+此文档站使用 [MkDocs](https://www.mkdocs.org/) 构建，旨在提供一个集中式知识库。
 
 ## 🤝 贡献
 

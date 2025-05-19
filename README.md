@@ -9,7 +9,7 @@
 
 ## 🌐 文档主页
 
-[🔗 https://seaflynn.github.io/doc-collect/#/](https://seaflynn.github.io/doc-collect/)
+[🔗 https://seaflynn.github.io/doc-collect/](https://seaflynn.github.io/doc-collect/)
 
 ## 📋 文档列表
 

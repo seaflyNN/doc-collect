@@ -34,3 +34,5 @@ nav:
   - 杂项:
     - 本地构建docsify: 杂项/本地构建docsify.md
     - 本地构建mkdocs: 杂项/本地构建mkdocs.md
+  - cpp:
+    - cpo: cpp/cpo.md

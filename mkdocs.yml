@@ -36,3 +36,6 @@ nav:
     - 本地构建mkdocs: 杂项/本地构建mkdocs.md
   - cpp:
     - cpo: cpp/cpo.md
+  - QT:
+    - qml笔记: QT/qml笔记.md
+    - 笔记: QT/笔记.md

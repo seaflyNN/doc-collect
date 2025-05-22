@@ -39,5 +39,5 @@ nav:
   - QT:
     - qml笔记: QT/qml笔记.md
     - 笔记: QT/笔记.md
-    - qml-bg-content-分离: QT/qml-bg-content-分离.md
-    - qml-背景和内容分离: QT/qml-背景和内容分离.md
+    - qml-background-contentitem-分离: QT/qml-background-contentitem-分离.md
+    - qt-qml常用组件: QT/qt-qml常用组件.md

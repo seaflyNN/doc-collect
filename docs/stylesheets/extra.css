@@ -1,0 +1,96 @@
+/* 自定义样式 */
+
+/* 改善代码块样式 */
+.highlight pre {
+  border-radius: 6px;
+}
+
+/* 改善表格样式 */
+.md-typeset table:not([class]) {
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* 改善警告框样式 */
+.md-typeset .admonition {
+  border-radius: 6px;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 改善标签页样式 */
+.md-typeset .tabbed-set {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05);
+}
+
+/* 改善任务列表样式 */
+.md-typeset .task-list-item {
+  list-style-type: none;
+}
+
+.md-typeset .task-list-control [type=checkbox] {
+  margin-right: 0.5rem;
+}
+
+/* 亮色系页脚样式 */
+.md-footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #ffffff !important;
+  border-top: 3px solid #5a67d8;
+}
+
+.md-footer-meta {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.md-footer a {
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.md-footer a:hover {
+  color: #ffd700 !important;
+  transform: translateY(-2px);
+}
+
+/* 页脚社交图标样式 */
+.md-footer__inner .md-social {
+  gap: 0.5rem;
+}
+
+.md-footer__inner .md-social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.md-footer__inner .md-social__link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+} 

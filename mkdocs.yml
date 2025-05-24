@@ -154,6 +154,8 @@ nav:
     - win终端插件安装: 杂项/win-类fish.md
   - cpp:
     - cpo: cpp/cpo.md
+    - code_snipate:
+      - 简单的文件迭代器: cpp/code_snipate/linux或macos下简易文件迭代器.md
   - QT:
     - qml笔记: QT/qml笔记.md
     - 笔记: QT/笔记.md

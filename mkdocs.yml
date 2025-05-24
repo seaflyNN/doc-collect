@@ -34,6 +34,7 @@ nav:
   - 杂项:
     - 本地构建docsify: 杂项/本地构建docsify.md
     - 本地构建mkdocs: 杂项/本地构建mkdocs.md
+    - vscode插件: 杂项/vscode-插件.md
   - cpp:
     - cpo: cpp/cpo.md
   - QT:

@@ -35,6 +35,8 @@ nav:
     - 本地构建docsify: 杂项/本地构建docsify.md
     - 本地构建mkdocs: 杂项/本地构建mkdocs.md
     - vscode插件: 杂项/vscode-插件.md
+    - Oh-My-Posh安装: 杂项/Oh-My-Posh安装.md
+    - win终端插件安装: 杂项/win-类fish.md
   - cpp:
     - cpo: cpp/cpo.md
   - QT:

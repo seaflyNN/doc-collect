@@ -155,6 +155,7 @@ nav:
     - vscode插件: 杂项/vscode-插件.md
     - Oh-My-Posh安装: 杂项/Oh-My-Posh安装.md
     - win终端插件安装: 杂项/win-类fish.md
+    - selenium-坑-chrome多用户资料: 杂项/selenium-坑-chrome多用户资料.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:

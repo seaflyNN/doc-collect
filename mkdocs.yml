@@ -156,6 +156,7 @@ nav:
     - Oh-My-Posh安装: 杂项/Oh-My-Posh安装.md
     - win终端插件安装: 杂项/win-类fish.md
     - selenium-坑-chrome多用户资料: 杂项/selenium-坑-chrome多用户资料.md
+    - chrome-插件-tutorial: 杂项/chrome-插件-tutorial.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:

@@ -166,3 +166,5 @@ nav:
     - 笔记: QT/笔记.md
     - qml-background-contentitem-分离: QT/qml-background-contentitem-分离.md
     - qt-qml常用组件: QT/qt-qml常用组件.md
+  - opencv:
+    - OpenCV4应用开发入门实践与工程化实践: opencv/OpenCV4应用开发入门实践与工程化实践.md

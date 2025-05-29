@@ -157,6 +157,7 @@ nav:
     - win终端插件安装: 杂项/win-类fish.md
     - selenium-坑-chrome多用户资料: 杂项/selenium-坑-chrome多用户资料.md
     - chrome-插件-tutorial: 杂项/chrome-插件-tutorial.md
+    - 文本对比: 杂项/文本对比.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:

@@ -158,6 +158,7 @@ nav:
     - selenium-坑-chrome多用户资料: 杂项/selenium-坑-chrome多用户资料.md
     - chrome-插件-tutorial: 杂项/chrome-插件-tutorial.md
     - 文本对比: 杂项/文本对比.md
+    - wsl2使用主机代理: 杂项/wsl2使用主机代理.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:

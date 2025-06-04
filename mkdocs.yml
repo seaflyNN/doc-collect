@@ -170,3 +170,5 @@ nav:
     - qt-qml常用组件: QT/qt-qml常用组件.md
   - opencv:
     - OpenCV4应用开发入门实践与工程化实践: opencv/OpenCV4应用开发入门实践与工程化实践.md
+    - opencv编译wasm: opencv/wasm-opencv.md
+

@@ -14,8 +14,12 @@
 
 ```sh
 sudo apt install fish
+mkdir dev && cd dev
+mkdir env && cd env
 git clone https://github.com/juj/emsdk.git
 cd emsdk
+./emsdk install latest
+./emsdk activate latest
 # 编辑 ~/.config/fish/config.fish
 # 假设 sdk 的位置在 ~/dev/env/emsdk
 echo 'source ~/dev/env/emsdk/emsdk_env.fish' >> ~/.config/fish/config.fish

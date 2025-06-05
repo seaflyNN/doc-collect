@@ -33,6 +33,10 @@ emcc --version
 
 ### 1.1 编译 `opencv`
 ```sh
+# 下载源码
+git clone https://github.com/opencv/opencv.git
+
+
 emcmake cmake ../ \
   -DCMAKE_BUILD_TYPE=Release \
   -DBUILD_SHARED_LIBS=OFF \
@@ -73,6 +77,9 @@ emmake make -j$(nproc)
 
 ### 2.1 构建环境
 ```sh
+# 下载源码
+git clone https://github.com/opencv/opencv.git
+
 emcmake cmake ../ \
   -DCMAKE_BUILD_TYPE=Release \
   -DBUILD_SHARED_LIBS=OFF \
@@ -102,7 +109,8 @@ emcmake cmake ../ \
   -DWITH_V4L=OFF \
   -DWITH_GSTREAMER=OFF \
   -DCMAKE_C_FLAGS="-O3 -msimd128" \
-  -DCMAKE_CXX_FLAGS="-O3 -msimd128"
+  -DCMAKE_CXX_FLAGS="-O3 -msimd128" \
+  -DCMAKE_INSTALL_PREFIX=./install
 ```
 
 ### 2.2 编译

@@ -161,6 +161,7 @@ nav:
     - wsl2使用主机代理: 杂项/wsl2使用主机代理.md
     - ubuntu-配置: 杂项/ubuntu-配置.md
     - emscripten-sdk配置: 杂项/emscripten-sdk配置.md
+    - win-ntop-使用: 杂项/win-ntop-使用.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:

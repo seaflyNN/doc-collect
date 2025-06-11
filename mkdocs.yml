@@ -167,6 +167,8 @@ nav:
     - cpo: cpp/cpo.md
     - code_snipate:
       - 简单的文件迭代器: cpp/code_snipate/linux或macos下简易文件迭代器.md
+  - rust:
+    - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:
     - qml笔记: QT/qml笔记.md
     - 笔记: QT/笔记.md

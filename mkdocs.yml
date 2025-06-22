@@ -172,6 +172,7 @@ nav:
       - 第二章-函数参数的占位符类型: cpp/cpp20完全指南/第2章-函数参数的占位符类型.md
       - 第三章-概念、需求和约束: cpp/cpp20完全指南/第3章-概念、需求和约束.md
       - 第四章-详细介绍概念、需求和约束: cpp/cpp20完全指南/第4章-详细介绍概念、需求和约束.md
+      - 第五章-详细介绍标准概念(std-concept): cpp/cpp20完全指南/第5章-详细介绍标准概念(std-concept).md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:

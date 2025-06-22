@@ -167,6 +167,8 @@ nav:
     - cpo: cpp/cpo.md
     - code_snipate:
       - 简单的文件迭代器: cpp/code_snipate/linux或macos下简易文件迭代器.md
+    - cpp20完全指南:
+      - 第一章-比较运算符: cpp/cpp20完全指南/第一章-比较运算符.md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:

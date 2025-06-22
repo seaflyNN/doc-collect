@@ -173,6 +173,8 @@ nav:
       - 第三章-概念、需求和约束: cpp/cpp20完全指南/第3章-概念、需求和约束.md
       - 第四章-详细介绍概念、需求和约束: cpp/cpp20完全指南/第4章-详细介绍概念、需求和约束.md
       - 第五章-详细介绍标准概念(std-concept): cpp/cpp20完全指南/第5章-详细介绍标准概念(std-concept).md
+    - cpp杂项:
+      - cpp20调试内联命名空间-内联变量-cpo: cpp/cpp杂项/cpp20调试内联命名空间-内联变量-cpo.md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:

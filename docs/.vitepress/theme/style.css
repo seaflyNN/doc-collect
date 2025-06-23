@@ -1,0 +1,178 @@
+/* 自定义样式 */
+
+/* 数学公式样式 */
+.MathJax {
+  font-size: 1em !important;
+}
+
+/* 代码块样式优化 */
+.vp-code-group .tabs {
+  border-radius: 8px 8px 0 0;
+}
+
+.vp-code-group .blocks {
+  border-radius: 0 0 8px 8px;
+}
+
+/* 表格样式优化 */
+.vp-doc table {
+  margin: 1rem 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* 警告框样式优化 */
+.custom-block {
+  margin: 16px 0;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid;
+}
+
+.custom-block.tip {
+  border-left-color: var(--vp-c-tip-1);
+  background-color: var(--vp-c-tip-soft);
+}
+
+.custom-block.warning {
+  border-left-color: var(--vp-c-warning-1);
+  background-color: var(--vp-c-warning-soft);
+}
+
+.custom-block.danger {
+  border-left-color: var(--vp-c-danger-1);
+  background-color: var(--vp-c-danger-soft);
+}
+
+.custom-block.info {
+  border-left-color: var(--vp-c-info-1);
+  background-color: var(--vp-c-info-soft);
+}
+
+/* 图片样式优化 */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+/* 链接样式优化 */
+.vp-doc a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* 代码行号样式 */
+.line-numbers-mode .line-numbers {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* 搜索框样式优化 */
+.DocSearch-Button {
+  border-radius: 8px;
+}
+
+/* 导航栏样式优化 */
+.VPNav {
+  backdrop-filter: blur(10px);
+}
+
+/* 侧边栏样式优化 */
+.VPSidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+.VPSidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 3px;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* 页面内容区域优化 */
+.vp-doc {
+  line-height: 1.7;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vp-doc h1 {
+  margin-top: 0;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .vp-doc img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .vp-doc table {
+    font-size: 14px;
+  }
+  
+  .vp-doc th,
+  .vp-doc td {
+    padding: 6px 12px;
+  }
+}
+
+/* 暗色模式特定样式 */
+.dark .vp-doc img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 代码块复制按钮样式 */
+.vp-code-group .copy {
+  border-radius: 4px;
+}
+
+/* 目录导航样式 */
+.VPDocAsideOutline .outline-marker {
+  border-radius: 2px;
+}
+
+/* 页脚样式 */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  margin-top: 2rem;
+  padding-top: 2rem;
+} 

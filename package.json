@@ -1,0 +1,24 @@
+{
+  "name": "doc-collect-vitepress",
+  "version": "1.0.0",
+  "description": "使用 VitePress 构建的文档站点",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "2.0.0-alpha.6",
+    "vue": "^3.5.0"
+  },
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "vue",
+    "markdown"
+  ],
+  "author": "seaflyNN",
+  "license": "MIT"
+} 

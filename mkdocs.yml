@@ -163,6 +163,8 @@ nav:
     - ubuntu-配置: 杂项/ubuntu-配置.md
     - emscripten-sdk配置: 杂项/emscripten-sdk配置.md
     - win-ntop-使用: 杂项/win-ntop-使用.md
+    - windows:
+      - win-cgo环境配置: 杂项/windows/win-cgo环境配置.md
   - cpp:
     - cpo: cpp/cpo.md
     - code_snipate:
@@ -174,8 +176,10 @@ nav:
       - 第四章-详细介绍概念、需求和约束: cpp/cpp20完全指南/第4章-详细介绍概念、需求和约束.md
       - 第五章-详细介绍标准概念(std-concept): cpp/cpp20完全指南/第5章-详细介绍标准概念(std-concept).md
       - 第六章-范围和视图: cpp/cpp20完全指南/第6章-范围和视图.md
+      - 第七章-范围和视图的工具: cpp/cpp20完全指南/第7章-范围和视图的工具.md
     - cpp杂项:
       - cpp20调试内联命名空间-内联变量-cpo: cpp/cpp杂项/cpp20调试内联命名空间-内联变量-cpo.md
+      - cpp20 stop token原理: cpp/cpp杂项/cpp20-stop-token-原理.md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:

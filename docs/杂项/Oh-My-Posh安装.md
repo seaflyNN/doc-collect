@@ -35,13 +35,13 @@ scoop bucket add nerd-fonts
 scoop install Meslo-NF
 ```
 执行`notepad $PROFILE`, 将以下内容粘贴进去即可
-```
+```ini
 # 导入 Oh My Posh
 oh-my-posh init pwsh | Invoke-Expression
 
 # 可选：指定主题（默认主题为 minimal）
-# $env:POSH_THEMES_PATH = "$(scoop prefix oh-my-posh)\themes"
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
+$env:POSH_THEMES_PATH = "$(scoop prefix oh-my-posh)\themes"
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
 ```
 
 #### 1.2.1 可选字体如下

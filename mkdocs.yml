@@ -154,6 +154,7 @@ nav:
     - 本地构建mkdocs: 杂项/本地构建mkdocs.md
     - MkDocs配置和优化: 杂项/mkdocs-配置和优化.md
     - vscode插件: 杂项/vscode-插件.md
+    - vscode设置: 杂项/vscode-设置.md
     - Oh-My-Posh安装: 杂项/Oh-My-Posh安装.md
     - win终端插件安装: 杂项/win-类fish.md
     - selenium-坑-chrome多用户资料: 杂项/selenium-坑-chrome多用户资料.md

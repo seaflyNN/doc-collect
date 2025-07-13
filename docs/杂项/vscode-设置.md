@@ -12,3 +12,10 @@
 ## 2. 显示函数参数名称
 `ctrl + ,`打开设置, 搜索`inlayHints`, 然后找到`C++`, 将`parameterNames.enabled`等几个参数打开即可
 
+## 3. 控制错误提示方式
+`ctrl + ,`打开设置, 搜索`editor.lightbulb.enabled`
+```
+editor.lightbulb.enabled
+```
+
+

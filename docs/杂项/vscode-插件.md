@@ -15,6 +15,7 @@
 + Markdown Preview Enhanced: markdown预览, mermaid也支持
 + GitLens: Git历史查看神器，显示每一行是谁写的
 + Path Intellisense: 自动补全文件路径，提升引入效率
++ Code Spell Checker: 拼写错误提示（变量、注释等）
 
 ## Cpp相关
 + Code Runner: 可以快速运行代码片段, 无需完整构建项目, 方便在开发过程中快速测试代码

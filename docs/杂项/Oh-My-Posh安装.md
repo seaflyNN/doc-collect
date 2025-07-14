@@ -13,6 +13,7 @@
         - [方式一：图形界面修改](#方式一图形界面修改)
         - [方式二：直接编辑 settings.json](#方式二直接编辑-settingsjson)
       - [步骤三：重启 VSCode Terminal](#步骤三重启-vscode-terminal)
+      - [步骤四: 修改win11终端字体](#步骤四-修改win11终端字体)
       - [效果对比](#效果对比)
 
 ## 1. 安装指南
@@ -110,6 +111,17 @@ MesloLGS Nerd Font
 ```powershell
 oh-my-posh init pwsh | Invoke-Expression
 ```
+
+---
+
+#### 步骤四: 修改win11终端字体
+1. 打开 Windows Terminal。
+2. 点击标签栏右侧的下拉箭头 ▼（或者使用快捷键 Ctrl + , 打开设置）。
+3. 选择左侧的一个配置文件（如 PowerShell、Command Prompt 或 WSL），进入它的设置页面。
+4. 在右侧找到 “外观（Appearance）” 标签页。
+5. 找到 “字体面孔（Font face）” 输入框，修改为你想用的字体名称（如 Cascadia Code, Fira Code, JetBrains Mono, Consolas 等）。
+6. （可选）调整字体大小、粗细等。
+7. 点击右下角 “保存”。
 
 ---
 

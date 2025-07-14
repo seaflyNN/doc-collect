@@ -4,7 +4,6 @@
 + Indent-Rainbow: 为每个缩进级别添加不同颜色, 使代码结构更清晰可见, 尤其适合多层嵌套代码
 + Dracula Official: 高对比度主题
 + Guides: 显示虚线缩进指示线，结合括号显示结构更直观
-+ indent-rainbow: 缩进区域显示颜色带，层次结构一目了然
 
 ## 工具类相关
 + Git Graph v3

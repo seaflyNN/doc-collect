@@ -183,6 +183,8 @@ nav:
     - cpp杂项:
       - cpp20调试内联命名空间-内联变量-cpo: cpp/cpp杂项/cpp20调试内联命名空间-内联变量-cpo.md
       - cpp20 stop token原理: cpp/cpp杂项/cpp20-stop-token-原理.md
+    - 常见错误:
+      - 匿名命名空间: cpp/常见错误/匿名命名空间.md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
   - QT:

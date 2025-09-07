@@ -187,6 +187,8 @@ nav:
       - 匿名命名空间: cpp/常见错误/匿名命名空间.md
   - rust:
     - 记录rust滥用lazy_static导致的一个bug: rust/记录rust滥用lazy_static导致的一个bug.md
+  - simd:
+    - simd笔记: simd/simd-笔记.md
   - QT:
     - qml笔记: QT/qml笔记.md
     - 笔记: QT/笔记.md

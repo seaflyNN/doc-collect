@@ -197,4 +197,5 @@ nav:
   - opencv:
     - OpenCV4应用开发入门实践与工程化实践: opencv/OpenCV4应用开发入门实践与工程化实践.md
     - opencv编译wasm: opencv/wasm-opencv.md
-
+  - 音视频:
+    - 1.色域: 音视频/1.色域.md

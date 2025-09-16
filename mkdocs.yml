@@ -199,3 +199,4 @@ nav:
     - opencv编译wasm: opencv/wasm-opencv.md
   - 音视频:
     - 1.色域: 音视频/1.色域.md
+    - 2.音频编码: 音视频/2.音频编码.md

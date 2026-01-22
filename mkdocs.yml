@@ -169,6 +169,7 @@ nav:
       - win-cgo环境配置: 杂项/windows/win-cgo环境配置.md
   - cpp:
     - cpo: cpp/cpo.md
+    - spdlog: cpp/spdlog.md
     - code_snipate:
       - 简单的文件迭代器: cpp/code_snipate/linux或macos下简易文件迭代器.md
       - ffmpeg+opencv的简易模板: cpp/code_snipate/ffmpeg-opencv-snipate.md

@@ -202,3 +202,6 @@ nav:
     - 2.音频编码: 音视频/2.音频编码.md
   - ffmpeg:
     - 1.ffmpeg的swscale库crash: ffmpeg/1.bug记录_swscale的crash.md
+  - ipc:
+    - 关于subprocess.h: ipc/关于subprocess.h.md
+

@@ -35,6 +35,16 @@ scoop bucket add nerd-fonts
 # 安装 Meslo-NF 字体
 scoop install Meslo-NF
 ```
+
+### 1.2.1 更新`powershell`各项参数
+```
+ Install-Module -Name PowerShellGet -Force -AllowClobber
+Get-Module PowerShellGet -ListAvailable | Select-Object Version
+Install-Module -Name PSReadLine -Force -SkipPublisherCheck
+# 创建配置文件
+New-Item -Path $PROFILE -ItemType File -Force
+```
+
 执行`notepad $PROFILE`, 将以下内容粘贴进去即可
 ```ini
 # 导入 Oh My Posh

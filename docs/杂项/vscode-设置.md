@@ -18,4 +18,6 @@
 editor.lightbulb.enabled
 ```
 
+## 4. git blame显示
+`ctrl + ,`或者`ctrl + shift + p`打开设置, 搜索 `Toggle Git Blame Editor Decoration` 回车即可
 
